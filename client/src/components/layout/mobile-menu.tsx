@@ -21,7 +21,7 @@ const MobileMenu = ({ isOpen, toggleMenu, navItems }: MobileMenuProps) => {
   if (!isOpen) return null;
 
   return (
-    <div className="md:hidden py-4 border-t border-gray-200">
+    <div className="md:hidden py-4 border-t border-[hsl(var(--neutral-light))]">
       <div className="container">
         <nav className="flex flex-col space-y-4">
           {navItems.map((item) => (
