@@ -49,7 +49,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
             {product.status}
           </Badge>
         </div>
-        <p className="text-neutral-mid mb-4 flex-grow">
+        <p className="text-[hsl(var(--neutral-mid))] mb-4 flex-grow">
           {product.description}
         </p>
         <a

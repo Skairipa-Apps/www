@@ -36,14 +36,14 @@ const MissionSection = () => {
                 <Users className="text-primary text-2xl" />
               </div>
               <h3 className="text-xl font-semibold mb-3">User-Centered</h3>
-              <p className="text-neutral-mid">
+              <p className="text-[hsl(var(--neutral-mid))]">
                 Every feature we build starts with understanding user needs. We prioritize experiences that feel natural and delightful.
               </p>
             </div>
           </div>
 
           <div className="mt-16">
-            <blockquote className="italic text-xl text-center text-neutral-mid">
+            <blockquote className="italic text-xl text-center text-[hsl(var(--neutral-mid))]">
               "Our purpose is to create technology that empowers without exploiting, giving users back control over their digital lives."
             </blockquote>
             <p className="text-center mt-4 font-medium">— The Skairipa Apps Team</p>

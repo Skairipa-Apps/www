@@ -94,7 +94,7 @@ const ContactSection = () => {
           <div className="grid md:grid-cols-2 gap-12">
             <div>
               <h3 className="text-xl font-semibold mb-4">Get in Touch</h3>
-              <p className="text-neutral-mid mb-6">
+              <p className="text-[hsl(var(--neutral-mid))] mb-6">
                 Our team is dedicated to providing excellent support. Whether you have a question about our products or want to provide feedback, we'd love to hear from you.
               </p>
 
@@ -103,7 +103,7 @@ const ContactSection = () => {
                   <div className="flex-shrink-0 h-6 w-6 text-primary">
                     <Mail className="h-5 w-5" />
                   </div>
-                  <div className="ml-3 text-neutral-mid">
+                  <div className="ml-3 text-[hsl(var(--neutral-mid))]">
                     <p>contact@skairipaapps.com</p>
                   </div>
                 </div>
@@ -112,7 +112,7 @@ const ContactSection = () => {
                   <div className="flex-shrink-0 h-6 w-6 text-primary">
                     <MapPin className="h-5 w-5" />
                   </div>
-                  <div className="ml-3 text-neutral-mid">
+                  <div className="ml-3 text-[hsl(var(--neutral-mid))]">
                     <p>San Francisco, CA</p>
                   </div>
                 </div>
@@ -121,7 +121,7 @@ const ContactSection = () => {
                   <div className="flex-shrink-0 h-6 w-6 text-primary">
                     <Clock className="h-5 w-5" />
                   </div>
-                  <div className="ml-3 text-neutral-mid">
+                  <div className="ml-3 text-[hsl(var(--neutral-mid))]">
                     <p>Monday - Friday: 9am - 5pm PT</p>
                   </div>
                 </div>
