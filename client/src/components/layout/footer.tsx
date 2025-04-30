@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-xl font-semibold mb-4">Skairipa Apps Inc.</h3>
-            <p className="text-gray-400 mb-4">
+            <p className="text-[hsl(var(--neutral-mid))] mb-4">
               Building innovative, privacy-conscious applications for iOS and the web.
             </p>
             <div className="flex space-x-4">
@@ -35,7 +35,7 @@ const Footer = () => {
             <ul className="space-y-2">
               {products.slice(0, 5).map((product) => (
                 <li key={product.id}>
-                  <Link href="/products" className="text-gray-400 hover:text-white transition">
+                  <Link href="/products" className="text-[hsl(var(--neutral-mid))] hover:text-white transition">
                     {product.name}
                   </Link>
                 </li>
@@ -47,17 +47,17 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-gray-400 hover:text-white transition">
+                <Link href="/" className="text-[hsl(var(--neutral-mid))] hover:text-white transition">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-400 hover:text-white transition">
+                <Link href="/contact" className="text-[hsl(var(--neutral-mid))] hover:text-white transition">
                   Contact
                 </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition">
+                <a href="#" className="text-[hsl(var(--neutral-mid))] hover:text-white transition">
                   Careers
                 </a>
               </li>
