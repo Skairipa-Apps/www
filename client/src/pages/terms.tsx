@@ -16,7 +16,7 @@ const Terms = () => {
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
               <h1 className="text-3xl sm:text-4xl font-bold mb-4">Terms of Service</h1>
-              <p className="text-lg text-neutral-mid">Last updated: January 15, 2023</p>
+              <p className="text-lg text-[hsl(var(--neutral-mid))]">Last updated: January 15, 2023</p>
               <div className="w-16 h-1 bg-primary mx-auto mt-4"></div>
             </div>
 

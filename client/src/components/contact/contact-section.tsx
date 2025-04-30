@@ -132,19 +132,19 @@ const ContactSection = () => {
                 <div className="flex space-x-4">
                   <a
                     href="#"
-                    className="h-10 w-10 rounded-full bg-neutral-light flex items-center justify-center text-neutral-dark hover:bg-primary hover:text-white transition"
+                    className="h-10 w-10 rounded-full bg-[hsl(var(--neutral-light))] flex items-center justify-center text-[hsl(var(--neutral-dark))] hover:bg-primary hover:text-white transition"
                   >
                     <Twitter className="h-5 w-5" />
                   </a>
                   <a
                     href="#"
-                    className="h-10 w-10 rounded-full bg-neutral-light flex items-center justify-center text-neutral-dark hover:bg-primary hover:text-white transition"
+                    className="h-10 w-10 rounded-full bg-[hsl(var(--neutral-light))] flex items-center justify-center text-[hsl(var(--neutral-dark))] hover:bg-primary hover:text-white transition"
                   >
                     <Linkedin className="h-5 w-5" />
                   </a>
                   <a
                     href="#"
-                    className="h-10 w-10 rounded-full bg-neutral-light flex items-center justify-center text-neutral-dark hover:bg-primary hover:text-white transition"
+                    className="h-10 w-10 rounded-full bg-[hsl(var(--neutral-light))] flex items-center justify-center text-[hsl(var(--neutral-dark))] hover:bg-primary hover:text-white transition"
                   >
                     <Github className="h-5 w-5" />
                   </a>
