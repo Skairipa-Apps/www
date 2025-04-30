@@ -1,7 +1,10 @@
+import { useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { useToast } from "@/hooks/use-toast";
+import { useMutation } from "@tanstack/react-query";
+import { apiRequest } from "@/lib/queryClient";
 import { Mail, MapPin, Clock, Twitter, Linkedin, Github } from "lucide-react";
 import {
   Form,
@@ -52,18 +55,28 @@ const ContactSection = () => {
     },
   });
 
+  const mutation = useMutation({
+    mutationFn: (values: FormValues) => {
+      return apiRequest("POST", "/api/contact", values);
+    },
+    onSuccess: () => {
+      toast({
+        title: "Message sent!",
+        description: "We'll get back to you as soon as possible.",
+      });
+      form.reset();
+    },
+    onError: (error) => {
+      toast({
+        title: "Error",
+        description: error.message || "There was an error sending your message. Please try again.",
+        variant: "destructive",
+      });
+    },
+  });
+
   const onSubmit = (values: FormValues) => {
-    // Client-only implementation - just show a success message
-    console.log("Form submitted:", values);
-    
-    // Show success toast
-    toast({
-      title: "Message sent!",
-      description: "We'll get back to you as soon as possible.",
-    });
-    
-    // Reset the form
-    form.reset();
+    mutation.mutate(values);
   };
 
   return (
@@ -216,9 +229,10 @@ const ContactSection = () => {
 
                   <Button 
                     type="submit" 
-                    className="w-full"
+                    className="w-full" 
+                    disabled={mutation.isPending}
                   >
-                    Send Message
+                    {mutation.isPending ? "Sending..." : "Send Message"}
                   </Button>
                 </form>
               </Form>
