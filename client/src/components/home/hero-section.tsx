@@ -2,13 +2,13 @@ import { Link } from "wouter";
 
 const HeroSection = () => {
   return (
-    <section className="bg-neutral-light py-16 sm:py-24">
+    <section className="bg-[hsl(var(--neutral-light))] py-16 sm:py-24">
       <div className="container">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">
             Innovative Apps with Privacy at Heart
           </h1>
-          <p className="text-lg sm:text-xl text-neutral-mid mb-8">
+          <p className="text-lg sm:text-xl text-[hsl(var(--neutral-mid))] mb-8">
             At Skairipa Apps Inc., we develop iOS and web applications that respect your privacy while delivering exceptional user experiences.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -34,7 +34,7 @@ const HeroSection = () => {
             </Link>
             <Link
               href="/contact"
-              className="inline-flex justify-center items-center px-6 py-3 bg-white text-primary font-medium rounded-md border border-primary hover:bg-neutral-light transition"
+              className="inline-flex justify-center items-center px-6 py-3 bg-white text-primary font-medium rounded-md border border-primary hover:bg-[hsl(var(--neutral-light))] transition"
             >
               Contact Us
             </Link>

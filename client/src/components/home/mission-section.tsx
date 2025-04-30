@@ -16,7 +16,7 @@ const MissionSection = () => {
                 <Lock className="text-primary text-2xl" />
               </div>
               <h3 className="text-xl font-semibold mb-3">Privacy First</h3>
-              <p className="text-neutral-mid">
+              <p className="text-[hsl(var(--neutral-mid))]">
                 We believe your data belongs to you. Our applications are designed to protect your privacy from the ground up.
               </p>
             </div>
@@ -26,7 +26,7 @@ const MissionSection = () => {
                 <Lightbulb className="text-primary text-2xl" />
               </div>
               <h3 className="text-xl font-semibold mb-3">Innovation</h3>
-              <p className="text-neutral-mid">
+              <p className="text-[hsl(var(--neutral-mid))]">
                 We push boundaries to create tools that solve real problems with elegant, intuitive interfaces.
               </p>
             </div>

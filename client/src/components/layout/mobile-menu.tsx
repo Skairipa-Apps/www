@@ -31,7 +31,7 @@ const MobileMenu = ({ isOpen, toggleMenu, navItems }: MobileMenuProps) => {
               className={`transition-colors ${
                 isActive(item.path)
                   ? "text-primary font-medium"
-                  : "text-neutral-dark hover:text-primary"
+                  : "text-[hsl(var(--neutral-dark))] hover:text-primary"
               }`}
               onClick={toggleMenu}
             >
