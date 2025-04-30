@@ -11,7 +11,7 @@ const Terms = () => {
         />
       </Helmet>
 
-      <section className="py-16 sm:py-24">
+      <section className="py-16 sm:py-24 bg-[hsl(var(--neutral-light))]">
         <div className="container">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">

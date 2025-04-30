@@ -3,7 +3,7 @@ import ProductCard from "./product-card";
 
 const ProductSection = () => {
   return (
-    <section className="py-16 sm:py-24 bg-neutral-light">
+    <section className="py-16 sm:py-24 bg-[hsl(var(--neutral-light))]">
       <div className="container">
         <div className="text-center mb-16">
           <h2 className="section-title">Our Applications</h2>

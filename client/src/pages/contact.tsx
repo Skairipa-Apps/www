@@ -12,7 +12,7 @@ const Contact = () => {
         />
       </Helmet>
 
-      <div className="bg-neutral-light py-12">
+      <div className="bg-[hsl(var(--neutral-light))] py-12">
         <div className="container">
           <h1 className="text-4xl font-bold text-center">Contact Us</h1>
         </div>
