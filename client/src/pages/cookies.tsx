@@ -104,7 +104,7 @@ export default function Cookies() {
             <p className="font-medium">Email: privacy@skairipapps.com</p>
           </div>
           
-          <p className="text-sm text-muted-foreground">Last updated: April 30, 2023</p>
+          <p className="text-sm text-muted-foreground">Last updated: April 30, 2025</p>
         </div>
       </div>
     </>

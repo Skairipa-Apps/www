@@ -47,24 +47,19 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-[hsl(var(--neutral-mid))] hover:text-white transition">
+                <Link href="/about" className="text-[hsl(var(--neutral-mid))] hover:text-white transition">
                   About Us
+                </Link>
+              </li>
+              <li>
+                <Link href="/careers" className="text-[hsl(var(--neutral-mid))] hover:text-white transition">
+                  Careers
                 </Link>
               </li>
               <li>
                 <Link href="/contact" className="text-[hsl(var(--neutral-mid))] hover:text-white transition">
                   Contact
                 </Link>
-              </li>
-              <li>
-                <a href="#" className="text-[hsl(var(--neutral-mid))] hover:text-white transition">
-                  Careers
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition">
-                  Blog
-                </a>
               </li>
             </ul>
           </div>
@@ -73,31 +68,31 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Legal</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/privacy" className="text-gray-400 hover:text-white transition">
+                <Link href="/privacy" className="text-[hsl(var(--neutral-mid))] hover:text-white transition">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/terms" className="text-gray-400 hover:text-white transition">
+                <Link href="/terms" className="text-[hsl(var(--neutral-mid))] hover:text-white transition">
                   Terms of Service
                 </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition">
+                <Link href="/cookies" className="text-[hsl(var(--neutral-mid))] hover:text-white transition">
                   Cookie Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition">
+                <Link href="/gdpr" className="text-[hsl(var(--neutral-mid))] hover:text-white transition">
                   GDPR Compliance
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400">© 2023 Skairipa Apps Inc. All rights reserved.</p>
+          <p className="text-[hsl(var(--neutral-mid))]">© 2025 Skairipa Apps Inc. All rights reserved.</p>
           <div className="mt-4 md:mt-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"

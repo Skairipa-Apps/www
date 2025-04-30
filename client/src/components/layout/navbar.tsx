@@ -52,6 +52,30 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
+            
+            <div className="relative group">
+              <button className="text-[hsl(var(--neutral-dark))] hover:text-primary transition-colors flex items-center">
+                Legal
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-2 z-50 invisible group-hover:visible">
+                {legalItems.map((item) => (
+                  <Link
+                    key={item.path}
+                    href={item.path}
+                    className={`block px-4 py-2 text-sm transition-colors ${
+                      isActive(item.path)
+                        ? "text-primary font-medium"
+                        : "text-[hsl(var(--neutral-dark))] hover:text-primary hover:bg-gray-50"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
           </nav>
 
           {/* Mobile Menu Toggle */}
@@ -75,7 +99,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Navigation Menu */}
-      <MobileMenu isOpen={isOpen} toggleMenu={toggleMenu} navItems={navItems} />
+      <MobileMenu isOpen={isOpen} toggleMenu={toggleMenu} navItems={navItems} legalItems={legalItems} />
     </header>
   );
 };

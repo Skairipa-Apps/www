@@ -121,7 +121,7 @@ export default function GDPR() {
             We may update this GDPR Compliance notice from time to time. Any changes will be posted on this page with an updated revision date.
           </p>
           
-          <p className="text-sm text-muted-foreground">Last updated: April 30, 2023</p>
+          <p className="text-sm text-muted-foreground">Last updated: April 30, 2025</p>
         </div>
       </div>
     </>
