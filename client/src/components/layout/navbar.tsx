@@ -13,9 +13,16 @@ const Navbar = () => {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "Products", path: "/products" },
+    { name: "About Us", path: "/about" },
+    { name: "Careers", path: "/careers" },
     { name: "Contact", path: "/contact" },
+  ];
+  
+  const legalItems = [
     { name: "Privacy", path: "/privacy" },
     { name: "Terms", path: "/terms" },
+    { name: "GDPR", path: "/gdpr" },
+    { name: "Cookies", path: "/cookies" },
   ];
 
   const isActive = (path: string) => {

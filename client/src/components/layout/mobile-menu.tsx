@@ -9,6 +9,7 @@ interface MobileMenuProps {
   isOpen: boolean;
   toggleMenu: () => void;
   navItems: NavItem[];
+  legalItems?: NavItem[];
 }
 
 const MobileMenu = ({ isOpen, toggleMenu, navItems }: MobileMenuProps) => {

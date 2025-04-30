@@ -9,6 +9,10 @@ import Products from "@/pages/products";
 import Contact from "@/pages/contact";
 import Privacy from "@/pages/privacy";
 import Terms from "@/pages/terms";
+import About from "@/pages/about";
+import Careers from "@/pages/careers";
+import GDPR from "@/pages/gdpr";
+import Cookies from "@/pages/cookies";
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
 
@@ -20,9 +24,13 @@ function Router() {
         <Switch>
           <Route path="/" component={Home} />
           <Route path="/products" component={Products} />
+          <Route path="/about" component={About} />
+          <Route path="/careers" component={Careers} />
           <Route path="/contact" component={Contact} />
           <Route path="/privacy" component={Privacy} />
           <Route path="/terms" component={Terms} />
+          <Route path="/gdpr" component={GDPR} />
+          <Route path="/cookies" component={Cookies} />
           <Route component={NotFound} />
         </Switch>
       </main>
