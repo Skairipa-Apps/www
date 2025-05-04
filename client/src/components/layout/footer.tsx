@@ -9,7 +9,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4">Skairipa Apps Inc.</h3>
             <p className="text-[hsl(var(--neutral-mid))] mb-4">
-              Building innovative, privacy-conscious applications for iOS and the web.
+              Building innovative, privacy-conscious applications for iOS and the web and more.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition">
@@ -94,7 +94,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-[hsl(var(--neutral-mid))]">© 2025 Skairipa Apps Inc. All rights reserved.</p>
           <div className="mt-4 md:mt-0">
-            <svg
+            {/* <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 120 40"
               width="120"
@@ -113,7 +113,7 @@ const Footer = () => {
               <g fill="#FFF">
                 <path d="M45.314 17.977a.784.784 0 1 1 0-1.57.784.784 0 0 1 0 1.57zm21.17 0a.784.784 0 1 1 0-1.57.784.784 0 0 1 0 1.57zm-38.09 5.236a.784.784 0 1 1-1.57 0 .784.784 0 0 1 1.57 0zm-4.425-5.215a.784.784 0 1 1 0-1.57.784.784 0 0 1 0 1.57zm59.095-.02a.78.78 0 0 1-.783-.783c0-.432.35-.783.784-.783.432 0 .783.35.783.783a.78.78 0 0 1-.783.784zm-4.446 5.235a.784.784 0 1 1-1.57 0 .784.784 0 0 1 1.57 0zm-16.91 0a.784.784 0 1 1-1.57 0 .784.784 0 0 1 1.57 0z" />
               </g>
-            </svg>
+            </svg> */}
           </div>
         </div>
       </div>

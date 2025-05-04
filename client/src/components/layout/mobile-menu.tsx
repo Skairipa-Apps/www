@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link, useLocation } from "wouter";
 
 interface NavItem {
@@ -12,17 +13,30 @@ interface MobileMenuProps {
   legalItems?: NavItem[];
 }
 
-const MobileMenu = ({ isOpen, toggleMenu, navItems, legalItems = [] }: MobileMenuProps) => {
+const MobileMenu = ({
+  isOpen,
+  toggleMenu,
+  navItems,
+  legalItems = [],
+}: MobileMenuProps) => {
   const [location] = useLocation();
 
-  const isActive = (path: string) => {
-    return location === path;
-  };
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
 
   if (!isOpen) return null;
 
   return (
-    <div className="md:hidden py-4 border-t border-[hsl(var(--neutral-light))]">
+    <div className="md:hidden fixed inset-0 z-50 backdrop-blur-sm bg-white/95 overflow-y-auto py-4 border-t border-[hsl(var(--neutral-light))] min-h-screen">
       <div className="container">
         <nav className="flex flex-col">
           <div className="pb-4">
@@ -31,7 +45,7 @@ const MobileMenu = ({ isOpen, toggleMenu, navItems, legalItems = [] }: MobileMen
                 key={item.path}
                 href={item.path}
                 className={`block py-2 transition-colors ${
-                  isActive(item.path)
+                  item.path === location
                     ? "text-primary font-medium"
                     : "text-[hsl(var(--neutral-dark))] hover:text-primary"
                 }`}
@@ -41,17 +55,18 @@ const MobileMenu = ({ isOpen, toggleMenu, navItems, legalItems = [] }: MobileMen
               </Link>
             ))}
           </div>
-          
           {legalItems.length > 0 && (
             <>
               <div className="border-t border-[hsl(var(--neutral-light))] my-2 pt-2">
-                <h3 className="text-xs uppercase text-[hsl(var(--neutral-mid))] font-medium py-2">Legal</h3>
+                <h3 className="text-xs uppercase text-[hsl(var(--neutral-mid))] font-medium py-2">
+                  Legal
+                </h3>
                 {legalItems.map((item) => (
                   <Link
                     key={item.path}
                     href={item.path}
                     className={`block py-2 text-sm transition-colors ${
-                      isActive(item.path)
+                      item.path === location
                         ? "text-primary font-medium"
                         : "text-[hsl(var(--neutral-dark))] hover:text-primary"
                     }`}
