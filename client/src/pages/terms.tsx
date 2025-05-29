@@ -71,15 +71,14 @@ const Terms = () => {
                 <p className="mb-4">
                   If you have any questions about these Terms, please contact us at legal@skairipaapps.com.
                 </p>
-
-                <div className="mt-8 text-center">
-                  <PDFDownloadButton 
-                    contentId="terms-of-service-content"
-                    filename="Skairipa_Apps_Terms_of_Service"
-                    title="Terms of Service"
-                    buttonText="Download Full Terms of Service"
-                  />
-                </div>
+              </div>
+              
+              <div className="mt-8 text-center">
+                <PDFDownloadButton 
+                  contentId="terms-of-service-content"
+                  filename="Skairipa_Apps_Terms_of_Service"
+                  title="Terms of Service"
+                />
               </div>
             </div>
           </div>

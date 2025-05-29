@@ -13,18 +13,24 @@ export default function Cookies() {
   return (
     <>
       <Helmet>
-        <title>Cookie Policy | Skairipa Apps Inc.</title>
+        <title>Cookie Policy - Skairipa Apps Inc.</title>
         <meta
           name="description"
           content="Learn about how Skairipa Apps Inc. uses cookies and manages your cookie preferences."
         />
       </Helmet>
 
-      <div className="container section">
-        <h1 className="section-title">Cookie Policy</h1>
-        <div className="section-divider"></div>
-
-        <div id="cookies-policy-content" className="mt-12 max-w-4xl mx-auto">
+      <section className="py-16 sm:py-24 bg-[hsl(var(--neutral-light))]">
+        <div className="container">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-12">
+              <h1 className="text-3xl sm:text-4xl font-bold mb-4">Cookie Policy</h1>
+              <p className="text-lg text-[hsl(var(--neutral-mid))]">Last updated: April 30, 2025</p>
+              <div className="w-16 h-1 bg-primary mx-auto mt-4"></div>
+            </div>
+            
+            <div className="bg-white rounded-xl shadow-md p-8">
+              <div id="cookies-policy-content" className="prose max-w-none">
           <p className="text-lg mb-6">
             This Cookie Policy explains how Skairipa Apps Inc. ("we", "us", or
             "our") uses cookies and similar technologies on our website. This
@@ -32,7 +38,7 @@ export default function Cookies() {
             alongside our Privacy Policy.
           </p>
 
-          <h2 className="text-2xl font-bold mt-10 mb-4">What Are Cookies?</h2>
+                <h3 className="text-xl font-bold mt-8 mb-4">What Are Cookies?</h3>
           <p className="mb-6">
             Cookies are small text files that are placed on your device when you
             visit a website. They are widely used to make websites work more
@@ -42,7 +48,7 @@ export default function Cookies() {
             deleted as soon as you close your web browser.
           </p>
 
-          <h2 className="text-2xl font-bold mt-10 mb-4">How We Use Cookies</h2>
+                <h3 className="text-xl font-bold mt-8 mb-4">How We Use Cookies</h3>
           <p className="mb-6">
             We use minimal cookies on our website, primarily for essential
             functions and to enhance user experience. As a privacy-focused
@@ -50,9 +56,9 @@ export default function Cookies() {
             transparently.
           </p>
 
-          <h2 className="text-2xl font-bold mt-10 mb-4">
-            Types of Cookies We Use
-          </h2>
+                <h3 className="text-xl font-bold mt-8 mb-4">
+                  Types of Cookies We Use
+                </h3>
           <Table className="mb-8">
             <TableHeader>
               <TableRow>
@@ -89,16 +95,16 @@ export default function Cookies() {
             </TableBody>
           </Table>
 
-          <h2 className="text-2xl font-bold mt-10 mb-4">Third-Party Cookies</h2>
+                <h3 className="text-xl font-bold mt-8 mb-4">Third-Party Cookies</h3>
           <p className="mb-6">
             We do not use third-party cookies for advertising purposes. The only
             third-party cookies on our website are for anonymous analytics that
             help us improve our site and services.
           </p>
 
-          <h2 className="text-2xl font-bold mt-10 mb-4">
-            Managing Your Cookie Preferences
-          </h2>
+                <h3 className="text-xl font-bold mt-8 mb-4">
+                  Managing Your Cookie Preferences
+                </h3>
           <p className="mb-4">
             Most web browsers allow you to manage your cookie preferences. You
             can:
@@ -163,16 +169,16 @@ export default function Cookies() {
             </li>
           </ul>
 
-          <h2 className="text-2xl font-bold mt-10 mb-4">
-            Changes to Our Cookie Policy
-          </h2>
+                <h3 className="text-xl font-bold mt-8 mb-4">
+                  Changes to Our Cookie Policy
+                </h3>
           <p className="mb-10">
             We may update our Cookie Policy from time to time. Any changes will
             be posted on this page and, where appropriate, notified to you.
             Please check back frequently to see any updates or changes.
           </p>
 
-          <h2 className="text-2xl font-bold mt-10 mb-4">Contact Us</h2>
+                <h3 className="text-xl font-bold mt-8 mb-4">Contact Us</h3>
           <p className="mb-6">
             If you have any questions about our Cookie Policy, please contact us
             at:
@@ -180,21 +186,19 @@ export default function Cookies() {
           <div className="bg-secondary p-6 rounded-lg mb-10">
             <p className="font-medium">Email: privacy@skairipapps.com</p>
           </div>
-
-          <div className="text-center mb-8">
-            <PDFDownloadButton
-              contentId="cookies-policy-content"
-              filename="Skairipa_Apps_Cookie_Policy"
-              title="Cookie Policy"
-              buttonText="Download Cookie Policy"
-            />
+              </div>
+              
+              <div className="mt-8 text-center">
+                <PDFDownloadButton
+                  contentId="cookies-policy-content"
+                  filename="Skairipa_Apps_Cookie_Policy"
+                  title="Cookie Policy"
+                />
+              </div>
+            </div>
           </div>
-
-          <p className="text-sm text-muted-foreground">
-            Last updated: April 30, 2025
-          </p>
         </div>
-      </div>
+      </section>
     </>
   );
 }

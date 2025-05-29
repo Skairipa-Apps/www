@@ -95,7 +95,7 @@ export function generatePDF(options: {
           .company-name {
             font-size: 28px;
             font-weight: bold;
-            color: #330085;
+            color: #df00e2;
             margin-bottom: 5px;
           }
           .timestamp {
