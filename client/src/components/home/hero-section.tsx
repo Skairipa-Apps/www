@@ -9,12 +9,13 @@ const HeroSection = () => {
             Innovative Apps with Privacy at Heart
           </h1>
           <p className="text-lg sm:text-xl text-[hsl(var(--neutral-mid))] mb-8">
-            At Skairipa Apps Inc., we develop iOS and web applications that respect your privacy while delivering exceptional user experiences.
+            At Skairipa Apps Inc., we develop iOS and web applications that
+            respect your privacy while delivering exceptional user experiences.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
               href="/products"
-              className="inline-flex justify-center items-center px-6 py-3 bg-primary text-white font-medium rounded-md hover:bg-primary/90 transition"
+              className="inline-flex justify-center items-center px-6 py-3 bg-primary text-white font-medium rounded-md hover:bg-[hsla(var(--primary),0.7)] transition"
             >
               Our Products
               <svg
