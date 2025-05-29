@@ -44,7 +44,7 @@ type FormValues = z.infer<typeof formSchema>;
 
 const ContactSection = () => {
   const { toast } = useToast();
-  
+
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -69,7 +69,9 @@ const ContactSection = () => {
     onError: (error) => {
       toast({
         title: "Error",
-        description: error.message || "There was an error sending your message. Please try again.",
+        description:
+          error.message ||
+          "There was an error sending your message. Please try again.",
         variant: "destructive",
       });
     },
@@ -86,7 +88,8 @@ const ContactSection = () => {
           <div className="text-center mb-16">
             <h2 className="section-title">Contact Us</h2>
             <p className="section-subtitle">
-              Have questions about our products or need assistance? We're here to help.
+              Have questions about our products or need assistance? We're here
+              to help.
             </p>
             <div className="section-divider"></div>
           </div>
@@ -95,7 +98,9 @@ const ContactSection = () => {
             <div>
               <h3 className="text-xl font-semibold mb-4">Get in Touch</h3>
               <p className="text-[hsl(var(--neutral-mid))] mb-6">
-                Our team is dedicated to providing excellent support. Whether you have a question about our products or want to provide feedback, we'd love to hear from you.
+                Our team is dedicated to providing excellent support. Whether
+                you have a question about our products or want to provide
+                feedback, we'd love to hear from you.
               </p>
 
               <div className="space-y-4">
@@ -156,7 +161,12 @@ const ContactSection = () => {
             <div>
               <h3 className="text-xl font-semibold mb-4">Send Us a Message</h3>
               <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+                <form
+                  action="https://usebasin.com/f/d812b3d3e18d"
+                  method="POST"
+                  className="space-y-4"
+                  encType="multipart/form-data"
+                >
                   <FormField
                     control={form.control}
                     name="name"
@@ -178,7 +188,10 @@ const ContactSection = () => {
                       <FormItem>
                         <FormLabel>Email</FormLabel>
                         <FormControl>
-                          <Input placeholder="your.email@example.com" {...field} />
+                          <Input
+                            placeholder="your.email@example.com"
+                            {...field}
+                          />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -191,16 +204,23 @@ const ContactSection = () => {
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel>Subject</FormLabel>
-                        <Select onValueChange={field.onChange} defaultValue={field.value}>
+                        <Select
+                          onValueChange={field.onChange}
+                          defaultValue={field.value}
+                        >
                           <FormControl>
                             <SelectTrigger>
                               <SelectValue placeholder="Select a subject" />
                             </SelectTrigger>
                           </FormControl>
                           <SelectContent>
-                            <SelectItem value="support">Product Support</SelectItem>
+                            <SelectItem value="support">
+                              Product Support
+                            </SelectItem>
                             <SelectItem value="feedback">Feedback</SelectItem>
-                            <SelectItem value="partnership">Partnership</SelectItem>
+                            <SelectItem value="partnership">
+                              Partnership
+                            </SelectItem>
                             <SelectItem value="other">Other</SelectItem>
                           </SelectContent>
                         </Select>
@@ -227,9 +247,9 @@ const ContactSection = () => {
                     )}
                   />
 
-                  <Button 
-                    type="submit" 
-                    className="w-full" 
+                  <Button
+                    type="submit"
+                    className="w-full"
                     disabled={mutation.isPending}
                   >
                     {mutation.isPending ? "Sending..." : "Send Message"}

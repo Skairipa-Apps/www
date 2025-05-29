@@ -1,41 +1,13 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Product, getStatusColor } from "@/lib/utils";
-import { LucideIcon } from "lucide-react";
-import {
-  Shield,
-  Globe,
-  Heart,
-  FileText,
-  CalendarCheck,
-  MessageSquare,
-} from "lucide-react";
-
-const getProductIcon = (iconName: string): LucideIcon => {
-  switch (iconName) {
-    case "shield-alt":
-      return Shield;
-    case "globe":
-      return Globe;
-    case "heart":
-      return Heart;
-    case "file-alt":
-      return FileText;
-    case "calendar-check":
-      return CalendarCheck;
-    case "comments":
-      return MessageSquare;
-    default:
-      return Shield;
-  }
-};
 
 interface ProductCardProps {
   product: Product;
 }
 
 const ProductCard = ({ product }: ProductCardProps) => {
-  const Icon = getProductIcon(product.icon);
+  const Icon = product.icon;
 
   return (
     <Card className="overflow-hidden hover:shadow-lg transition-shadow h-full flex flex-col">

@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import { PDFDownloadButton } from "@/components/ui/pdf-download-button";
 
 const Terms = () => {
   return (
@@ -21,7 +22,7 @@ const Terms = () => {
             </div>
 
             <div className="bg-white rounded-xl shadow-md p-8">
-              <div className="prose max-w-none">
+              <div id="terms-of-service-content" className="prose max-w-none">
                 <p className="mb-4">
                   Please read these Terms of Service carefully before using our applications and services. By accessing or using our services, you agree to be bound by these Terms.
                 </p>
@@ -72,7 +73,12 @@ const Terms = () => {
                 </p>
 
                 <div className="mt-8 text-center">
-                  <a href="#" className="text-primary hover:underline">Download Full Terms of Service (PDF)</a>
+                  <PDFDownloadButton 
+                    contentId="terms-of-service-content"
+                    filename="Skairipa_Apps_Terms_of_Service"
+                    title="Terms of Service"
+                    buttonText="Download Full Terms of Service"
+                  />
                 </div>
               </div>
             </div>

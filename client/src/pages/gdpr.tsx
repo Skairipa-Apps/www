@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { PDFDownloadButton } from "@/components/ui/pdf-download-button";
 
 export default function GDPR() {
   return (
@@ -13,7 +14,7 @@ export default function GDPR() {
         <h1 className="section-title">GDPR Compliance</h1>
         <div className="section-divider"></div>
         
-        <div className="mt-12 max-w-4xl mx-auto">
+        <div id="gdpr-content" className="mt-12 max-w-4xl mx-auto">
           <p className="text-lg mb-6">
             At Skairipa Apps Inc., we're committed to protecting your privacy rights under the General Data Protection Regulation (GDPR). 
             This page explains how we comply with GDPR requirements and how you can exercise your rights under this regulation.
@@ -120,6 +121,15 @@ export default function GDPR() {
           <p className="mb-10">
             We may update this GDPR Compliance notice from time to time. Any changes will be posted on this page with an updated revision date.
           </p>
+          
+          <div className="text-center mb-8">
+            <PDFDownloadButton 
+              contentId="gdpr-content"
+              filename="Skairipa_Apps_GDPR_Compliance"
+              title="GDPR Compliance"
+              buttonText="Download GDPR Compliance Document"
+            />
+          </div>
           
           <p className="text-sm text-muted-foreground">Last updated: April 30, 2025</p>
         </div>
