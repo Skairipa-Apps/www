@@ -10,6 +10,7 @@ const Terms = () => {
           name="description"
           content="Skairipa Apps Inc. Terms of Service - Please read these terms carefully before using our applications."
         />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
       </Helmet>
 
       <section className="py-16 sm:py-24 bg-[hsl(var(--neutral-light))]">

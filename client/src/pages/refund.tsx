@@ -10,6 +10,7 @@ const RefundPolicy = () => {
           name="description"
           content="Refund Policy for subscriptions and purchases on Skairipa Apps Inc. Learn how refunds work on mobile and web platforms."
         />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
       </Helmet>
 
       <section className="py-16 sm:py-24 bg-[hsl(var(--neutral-light))]">

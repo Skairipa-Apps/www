@@ -7,11 +7,14 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Skairipa Apps Inc. - Privacy-Conscious iOS and Web Applications</title>
+        <title>
+          Skairipa Apps Inc.
+        </title>
         <meta
           name="description"
           content="Skairipa Apps Inc. develops innovative, privacy-conscious iOS and web applications that respect your data while delivering exceptional user experiences."
         />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
       </Helmet>
 
       <HeroSection />

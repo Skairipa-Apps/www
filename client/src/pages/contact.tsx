@@ -10,6 +10,7 @@ const Contact = () => {
           name="description"
           content="Get in touch with the Skairipa Apps team. We're here to help with any questions about our privacy-focused applications."
         />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
       </Helmet>
 
       <div className="bg-[hsl(var(--neutral-light))] py-12">

@@ -10,6 +10,7 @@ const Products = () => {
           name="description"
           content="Discover our suite of privacy-conscious applications for iOS and the web, designed with your data privacy in mind."
         />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
       </Helmet>
 
       <div className="bg-[hsl(var(--neutral-light))] py-12">

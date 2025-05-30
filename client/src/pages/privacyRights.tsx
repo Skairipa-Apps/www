@@ -10,6 +10,7 @@ const PrivacyRights = () => {
           name="description"
           content="Understand your privacy rights under CCPA and GDPR when using Skairipa Apps Inc.'s services."
         />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
       </Helmet>
 
       <section className="py-16 sm:py-24 bg-[hsl(var(--neutral-light))]">

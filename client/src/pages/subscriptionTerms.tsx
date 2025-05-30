@@ -10,6 +10,7 @@ const SubscriptionTerms = () => {
           name="description"
           content="Learn how subscriptions work across Skairipa Apps Inc.'s mobile and web platforms, including billing, renewal, and cancellation policies."
         />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
       </Helmet>
 
       <section className="py-16 sm:py-24 bg-[hsl(var(--neutral-light))]">

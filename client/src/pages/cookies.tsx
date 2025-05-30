@@ -10,6 +10,7 @@ const CookiePolicy = () => {
           name="description"
           content="Cookie Policy for Skairipa Apps Inc. Learn how we use cookies for sessions and essential preferences only."
         />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
       </Helmet>
 
       <section className="py-16 sm:py-24 bg-[hsl(var(--neutral-light))]">
