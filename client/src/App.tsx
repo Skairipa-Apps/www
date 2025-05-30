@@ -8,7 +8,6 @@ import Home from "@/pages/home";
 import Products from "@/pages/products";
 import Contact from "@/pages/contact";
 import Privacy from "@/pages/privacy";
-import EULA from "@/pages/EULA";
 import Terms from "@/pages/terms";
 import About from "@/pages/about";
 import Careers from "@/pages/careers";
@@ -34,7 +33,6 @@ function Router() {
           <Route path="/refund-policy" component={Refund} />
           <Route path="/terms" component={Terms} />
           <Route path="/privacy-rights" component={PrivacyRights} />
-          <Route path="/eula" component={EULA} />
           <Route path="/cookies" component={Cookies} />
           <Route path="/subscription-terms" component={SubscriptionTerms} />
           <Route component={NotFound} />
