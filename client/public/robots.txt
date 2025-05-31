@@ -1,6 +1,8 @@
 User-agent: *
 Disallow: /
 
-Allow: /
+Allow: /$
 Allow: /contact
 Allow: /careers
+
+Sitemap: https://skairipaapps.com/sitemap.xml
