@@ -37,7 +37,6 @@ const Navbar = () => {
     { name: "Terms", path: "/terms" },
     { name: "Privacy Rights (GDPR & CCPA Disclosure)", path: "/privacy-rights" },
     { name: "Cookies", path: "/cookies" },
-    { name: "EULA", path: "/eula" },
     { name: "Refund Policy", path: "/refund-policy" },
     { name: "Subscription Terms", path: "/subscription-terms" },
   ];
