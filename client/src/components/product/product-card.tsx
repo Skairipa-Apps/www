@@ -11,18 +11,37 @@ const ProductCard = ({ product }: ProductCardProps) => {
 
   return (
     <Card className="overflow-hidden hover:shadow-lg transition-shadow h-full flex flex-col">
-      <div className={`h-48 bg-gradient-to-r ${product.color} flex items-center justify-center`}>
+      <div
+        className={`h-48 bg-gradient-to-r ${product.color} flex items-center justify-center`}
+      >
         <Icon className="text-white w-16 h-16" />
       </div>
       <CardContent className="p-6 flex flex-col flex-grow">
         <div className="flex justify-between items-center mb-3">
-          <h3 className="text-xl font-bold">{product.name}</h3>
-          <Badge className={getStatusColor(product.status)}>
+          <h3 className="text-xl font-bold max-w-60">{product.name}</h3>
+          <Badge className={`${getStatusColor(product.status)}`}>
             {product.status}
           </Badge>
         </div>
         <p className="text-[hsl(var(--neutral-mid))] mb-4 flex-grow">
-          {product.description}
+          {product.description
+            .split(/(\([^)]+\)\[[^\]]+\])/g)
+            .map((part, index) => {
+              const match = part.match(/^\(([^)]+)\)\[([^\]]+)\]$/);
+              return match ? (
+                <a
+                  key={index}
+                  href={match[2]}
+                  className="text-primary hover:underline font-medium"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {match[1]}
+                </a>
+              ) : (
+                <p key={index}>{part}</p>
+              );
+            })}
         </p>
         <a
           href={product.learnMoreUrl}

@@ -1,6 +1,6 @@
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
-import { CalendarCog, HeartHandshake, Hourglass, LucideIcon, Network, Pyramid, SmilePlus, Wallet } from "lucide-react";
+import { CalendarCog, HeartHandshake, Hourglass, LucideIcon, Network, Pyramid, SmilePlus, UtilityPole, Wallet } from "lucide-react";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -122,7 +122,7 @@ export const products: Product[] = [
   },
   {
     id: 12,
-    name: "Unamed Project 3",
+    name: "SkaiNet",
     description: "A social media app, combining servers with subs with video?.",
     status: "In Development",
     icon: Network,
@@ -136,6 +136,16 @@ export const products: Product[] = [
       "Skairia Apps breaking into the gaming industry!? Yes, It's true this is a game where you play as a sphere and dodge rectangular prisms.",
     status: "In Development",
     icon: Pyramid,
+    color: "from-purple-500 to to-pink-500",
+    learnMoreUrl: "",
+  },
+  {
+    id: 14,
+    name: "The Hanna Skairipa Phone System",
+    description:
+      "A phone system where they're is the option to talk to Lucy. A beautiful AI girl that can be talked to platonically or romantically. With many options on how to spend time with her. Get images with a bonus website or just use the texting and calling features. With other options such as listening to music. (In development prototype here)[https://docs.google.com/presentation/d/1b29b2OVW0hOZzcJyejE4fqjKyeu-LoO8Ohv6JCJUuW8/edit?slide=id.p#slide=id.p]",
+    status: "In Development",
+    icon: UtilityPole,
     color: "from-purple-500 to to-pink-500",
     learnMoreUrl: "",
   },
