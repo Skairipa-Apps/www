@@ -1,33 +1,70 @@
 import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 export default function Careers() {
   const openPositions = [
     {
       title: "iOS Developer",
       type: "Volunteer",
-      description: "Help us build beautiful, privacy-focused iOS applications using Swift and SwiftUI. Experience with iOS development required.",
-      skills: ["Swift", "SwiftUI", "iOS SDK", "Git"]
+      description:
+        "Help us build beautiful, privacy-focused iOS applications using Swift and SwiftUI. Experience with iOS development required.",
+      skills: ["Swift", "SwiftUI", "iOS SDK", "Git"],
+    },
+    {
+      title: "Android Engineer",
+      type: "Volunteer",
+      description:
+        "Join our team to bring our privacy-first applications to Android. You'll be helping port existing iOS functionality into a native Android experience using Kotlin. Your contributions will ensure our secure communication tools are accessible to all users, regardless of platform.",
+      skills: ["Kotlin", "Jetpack Compose", "Android SDK", "Git"],
     },
     {
       title: "Frontend Developer",
       type: "Volunteer",
-      description: "Create responsive and accessible user interfaces for our web applications. Experience with modern frontend frameworks required.",
-      skills: ["React", "TypeScript", "HTML/CSS", "Responsive Design"]
+      description:
+        "Create responsive and accessible user interfaces for our web applications. Experience with modern frontend frameworks required.",
+      skills: ["React", "TypeScript", "HTML/CSS", "Responsive Design", "Git"],
+    },
+    {
+      title: "Backend Developer",
+      type: "Volunteer",
+      description:
+        "Create highly secure post quantum secure servers keeping users data secure and make the backbone of our apps function. Create algorithms and functionality.",
+      skills: [
+        "TypeScript",
+        "Restful API",
+        "Git",
+        "Optional: Phone systems engineering",
+      ],
     },
     {
       title: "UI/UX Designer",
       type: "Volunteer",
-      description: "Design beautiful, intuitive interfaces for our applications that follow Apple's Human Interface Guidelines and accessibility standards.",
-      skills: ["Figma", "UI Design", "UX Research", "Accessibility"]
+      description:
+        "Design beautiful, intuitive interfaces for our applications that follow Apple's Human Interface Guidelines and accessibility standards.",
+      skills: ["Figma", "UI Design", "UX Research", "Accessibility"],
     },
     {
       title: "Privacy Advocate",
       type: "Volunteer",
-      description: "Help ensure our applications follow best practices for privacy and data protection. Knowledge of privacy regulations and standards required.",
-      skills: ["GDPR", "CCPA", "Privacy By Design", "Data Protection"]
-    }
+      description:
+        "Help ensure our applications follow best practices for privacy and data protection. Knowledge of privacy regulations and standards required.",
+      skills: ["Law", "GDPR", "Privacy By Design", "Data Protection"],
+    },
+    {
+      title: "Growth & Partnerships Manager",
+      type: "Volunteer",
+      description:
+        "Identify and cultivate relationships with organizations, universities, and influencers that align with our mission to promote privacy-first technology.",
+      skills: ["Outreach", "Negotiation", "Growth Strategy"],
+    },
   ];
 
   return (
@@ -109,7 +146,7 @@ export default function Careers() {
                 <CardHeader>
                   <CardTitle>{position.title}</CardTitle>
                   <CardDescription>
-                    <span className="inline-block px-2 py-1 text-xs rounded-full bg-primary/10 text-primary font-medium mt-2">
+                    <span className="inline-block pr-2 text-base rounded-full bg-primary/10 text-primary font-medium mt-2">
                       {position.type}
                     </span>
                   </CardDescription>

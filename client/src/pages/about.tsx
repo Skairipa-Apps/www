@@ -4,7 +4,7 @@ export default function About() {
   return (
     <>
       <Helmet>
-        <title>About Us | Skairipa Apps Inc.</title>
+        <title>About Us - Skairipa Apps Inc.</title>
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="title" content="Skairipa Apps Inc." />
         <meta
@@ -41,11 +41,11 @@ export default function About() {
         <div className="mt-12 max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold mb-4">Our Story</h2>
           <p className="mb-6 text-lg">
-            Skairipa Apps Inc. was founded in 2023 with a simple mission: to
+            Skairipa Apps Inc. was founded in 2025 with a simple mission: to
             create innovative, privacy-first applications that enhance people's
-            lives while respecting their digital rights. As technology becomes
-            increasingly integrated into our daily lives, we believe that
-            privacy should be a fundamental right, not an optional feature.
+            lives while respecting their digital rights. From managing tasks to
+            streamlining communication, we’re committed to making daily life
+            easier through thoughtfully designed technology.
           </p>
 
           <h2 className="text-2xl font-bold mt-10 mb-4">Our Values</h2>
